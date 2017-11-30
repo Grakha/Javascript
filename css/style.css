@@ -1,0 +1,630 @@
+.oldYear {
+	display: none;
+}
+.emptyStr {
+	display: none;
+	color: red;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.squareNum {
+	width: 100px;
+	color: #333;
+	font-size: 18px;
+	font-weight: 900;
+	border: 1px dotted #ccc;
+	text-align: center;
+	cursor: pointer;
+}
+.squareNum:hover{
+	color: lightgreen;
+
+}
+.imgBox {
+
+}
+.imgItem {
+	display: block;
+	width: 376px;
+	height: 220px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.resizeImg {
+	display: block;
+	width: 376px;
+	height: 220px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+#socialImages {
+	width: 600px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+#socialImages img {
+	width: 30px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#socialImages img.big {
+	width: 50px;
+	height: 50px;
+	border-radius: 3px;
+	box-shadow: 10px 10px 5px #333;
+	cursor: pointer;
+}
+#caseCountInput input[type="text"] {
+	pointer-events: none;
+}
+#form input {
+	display: block;
+	width: 100px;
+	margin-top: 5px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: 1px solid #f8f8f8;
+}
+button#btnGetSum {
+	margin-top: 10px;
+	padding: 5px 10px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+button#btnGetSum:active {
+	outline: none;
+	box-shadow: none;
+}
+button#btnGetSum:focus {
+	outline: none;
+}
+p.putNumber {
+	width: 50px;
+	margin-left: 10px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ccc;
+}
+form.formForSum input{
+	width: 100px;
+	margin-top: 5px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: 1px solid #f8f8f8;
+}
+button#getForms {
+	margin-top: 10px;
+	padding: 5px 10px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+button#getForms:active {
+	outline: none;
+	box-shadow: none;
+}
+button#getForms:focus {
+	outline: none;
+}
+p.resSumNum {
+	width: 50px;
+	margin-left: 10px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ccc;
+}
+#formSearchIndex {
+	position: relative;
+	padding-top: 10px;
+}
+#idSelect{
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+#searchIndex {
+	width: 120px;
+	height: 28px;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 0;
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
+	border: 1px solid #ccc;
+}
+input#searchIndex.error {
+	border: 1px solid red;
+	color: red;
+}
+input#searchIndex + span {
+	display: none;
+}
+input#searchIndex.error + span {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-left: 5px;
+	color: red;
+}
+input#btnSearch {
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 5px 10px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+input#btnSearch:active {
+	outline: none;
+	box-shadow: none;
+}
+input#btnSearch:focus {
+	outline: none;
+}
+#formChoice {
+
+}
+select#regionSelect {
+	width: 150px;
+	height: 30px;
+	padding-left: 7px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+select#countrySelect {
+	width: 400px;
+	height: 30px;
+	padding-left: 7px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+select#regionSelect:focus,
+select#countrySelect:focus {
+	outline: none;
+}
+#formCheckInput input {
+	width: 150px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+#formCheckInput input:focus {
+	outline: none;
+}
+#formCheckInput input.error {
+	background-color: red;
+}
+#formCheckInput input.success {
+	background-color: lightgreen;
+}
+#formSelection input {
+	width: 500px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+#formSelection input:focus {
+	outline: none;
+}
+button#btnFindNum {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+button#btnFindNum:active {
+	outline: none;
+	box-shadow: none;
+}
+button#btnFindNum:focus {
+	outline: none;
+}
+#sumTitle input {
+	width: 50px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#sumTitle input:focus {
+	outline: none;
+}
+#squareBlock {
+	
+}
+#squareBlock input {
+	width: 200px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#squareBlock button {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+#squareBlock button:active {
+	outline: none;
+	box-shadow: none;
+}
+#squareBlock button:focus {
+	outline: none;
+}
+#randomStr input {
+	width: 100px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#randomStr button {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+#randomStr button:active {
+	outline: none;
+	box-shadow: none;
+}
+#randomStr button:focus {
+	outline: none;
+}
+#randomStrNum input {
+	width: 150px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#randomStrNum button {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+#randomStrNum button:active {
+	outline: none;
+	box-shadow: none;
+}
+#randomStrNum button:focus {
+	outline: none;
+}
+#randomChoice input {
+	width: 150px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#randomChoice button {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+#randomChoice button:active {
+	outline: none;
+	box-shadow: none;
+}
+#randomChoice button:focus {
+	outline: none;
+}
+#countdownBox input {
+	width: 150px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#par.redColor {
+	background-color: red;
+}
+#par.greenColor {
+	background-color: green;
+}
+#par {
+	width: 100px;
+	height: 100px;
+	margin-left: 110px;
+	border-radius: 50%;
+	border: 1px solid #333;
+}
+button#btnAddColor,
+button#btnStopChange {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+button#btnAddColor:active,
+button#btnStopChange:active {
+	outline: none;
+	box-shadow: none;
+}
+button#btnAddColor:focus,
+button#btnStopChange:focus {
+	outline: none;
+}
+#paragraph {
+	width: 100px;
+	height: 100px;
+	margin-left: 110px;
+	border-radius: 50%;
+	border: 1px solid #333;
+}
+button#btnStartChange,
+button#btnStopColor {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+button#btnStartChange:active,
+button#btnStopColor:active {
+	outline: none;
+	box-shadow: none;
+}
+button#btnStartChange:focus,
+button#btnStopColor:focus {
+	outline: none;
+}
+#changeLink {
+	display: block;
+	margin-left: 20px;
+	color: darkblue;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#progNumber input {
+	width: 150px;
+	height: 30px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+button#btnCountNum,
+button#btnClearCount {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px 25px;
+	background-color: lightblue;
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+button#btnCountNum:active,
+button#btnClearCount:active {
+	outline: none;
+	box-shadow: none;
+}
+button#btnCountNum:focus,
+button#btnClearCount:focus {
+	outline: none;
+}
+#startCountdown {
+	width: 160px;
+	height: 30px;
+	border: 1px dotted #ccc;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 10px;
+}
+#provideParag p {
+	width: 20px;
+	cursor: pointer;
+}
+#provideDiv div {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+#clientTop {
+	width: 100px;
+	height: 100px;
+	margin-top: 20px;
+	border: 10px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+}
+#clientLeft {
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+	border: 15px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+}
+#offsetWidth {
+	width: 150px;
+	height: 150px;
+	padding: 30px;
+	margin-top: 30px;
+	border: 15px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+}
+#offsetHeigth {
+	width: 150px;
+	height: 150px;
+	padding: 30px;
+	margin-top: 30px;
+	border: 15px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+}
+#getComputedStyle {
+	width: 150px;
+	height: 150px;
+	padding: 30px;
+	margin-top: 30px;
+	border: 15px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+	overflow: scroll; 
+}
+#ChangeSizeStyle {
+	width: 150px;
+	height: 150px;
+	padding: 30px;
+	margin-top: 30px;
+	border: 15px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+}
+#coordsMousemMove {
+	width: 400px;
+	height: 250px;
+	border: 1px solid blue;
+}
+#shoWCoords {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#coordsArea {
+	position: relative;
+	width: 400px;
+	height: 250px;
+	border: 1px solid blue;
+	overflow: hidden;
+}
+#shoWInfo {
+	font-size: 14px;
+}
+#squareClient {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	border: 1px solid red;
+}
+#areaForMove {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	border: 5px solid #c3c3c3;
+	overflow: hidden;
+}
+#infoArea {
+	font-size: 14px;
+	text-align: center;
+}
+#squareElem {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 75px;
+	height: 75px;
+	border: 2px solid green;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+}
+#areaBgColor {
+	width: 100px;
+	height: 100px;
+	border: 2px solid yellow;
+}
+#areaDiffKey {
+	width: 100px;
+	height: 30px;
+	border: 2px solid lightgreen;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+#paragGetVal {
+	width: 160px;
+	height: 30px;
+	border-bottom: 2px solid lightgreen;
+	line-height: 30px;
+	color: #333333;
+}
+table#tableWork
+table#tableWork tr,
+table#tableWork td {
+	border: 1px solid black;
+}
+#tableWork {
+	width: 450px;
+	height: auto;
+}
+#tableWork thead {
+	height: auto;
+	background-color: #f8f8f8;
+}

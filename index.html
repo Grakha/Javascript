@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<title>http://theory.phphtml.net/tasks/javascript/practice/praktika-javascript-dlya-novichkov.html</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		/*div.example {
+			display: -moz-box;
+			display: -webkit-box;
+			display: box;
+
+			 Children should be oriented vertically 
+			-moz-box-orient: block-axis;
+			-webkit-box-orient: block-axis;
+			box-orient: block-axis;
+		}*/
+	</style>
+</head>
+<body>
+	<input type="text" name="thirdNum" id="no" placeholder="Enter Int">
+	<p id="result"></p>
+	<br>
+	<br>
+
+	<input type="text" name="fullName" id="fullName" placeholder="Enter Full Name">
+	<br>
+	<br>
+	<h2>Divide full name on cases input</h2>
+	<input type="text" name="firstName" class="name" placeholder="First Name">
+	<input type="text" name="secondName" class="name" placeholder="Second Name">
+	<input type="text" name="thirdName" class="name" placeholder="Third Name">
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>UpperCase first letter in each word</h2>
+	<input type="text" id="caseName" placeholder="Enter your name">
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Count wors in string</h2>
+	<input type="text" id="countLetter" placeholder="Enter some text">
+	<p class="countEnter"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Longest Word</h2>
+	<input type="text" id="longestWord" placeholder="Enter Text">
+	<p class="countLongestWord"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Replace Date</h2>
+	<input type="text" id="dateChange" placeholder="22.10.2017">
+	<h2>Birthday</h2>
+	<input type="text" id="birhdayYear" placeholder="Enter Year Birthday">
+	<button type="button" id="btnFindOut">Find Out</button>
+	<p class="oldYear"></p>
+	<p class="emptyStr">Please enter Year Birthday</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Word who read end like to start</h2>
+	<input type="text" id="compareSelfWord" placeholder="Enter your word">
+	<button id="btnCheckWord" type="button">Check Word</button>
+	<p class="booleanAnswer"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Searching Number Three(3)</h2>
+	<input type="text" id="findInt" placeholder="Enter some Int">
+	<p class="outputRes"></p>
+	<p class="outputCode"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Add odered list to end string</h2>
+	<div class="olBox">
+		<p class="oderedList">lorem gun</p>
+		<p class="oderedList">lorem pulls</p>
+		<p class="oderedList">lorem multiply</p>
+		<p class="oderedList">lorem siphony play</p>
+		<p class="oderedList">lorem Ipsame try write</p>
+		<p class="oderedList">lorem Check velmart divide</p>
+		<button id="btnAddOderedList" type="button">Add Index</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Sort Int and put into input</h2>
+	<div class="numBox">
+		<p class="listInt">42</p>
+		<p class="listInt">3</p>
+		<p class="listInt">5</p>
+		<p class="listInt">89</p>
+		<p class="listInt">132</p>
+		<input type="text" id="resSortInt">
+		<button id="btnSort" type="button">Sort Int</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Add self "href" to link</h2>
+	<div class="hrefBox">
+		<a href="http://theory.phphtml.net/" class="linkList">1. Работа</a>
+		<br>
+		<br>
+		<a href="http://theory.phphtml.net/tasks/" class="linkList">2. Улица</a>
+		<br>
+		<br>
+		<a href="http://theory.phphtml.net/tasks/javascript/" class="linkList">3. Курение</a>
+		<br>
+		<br>
+		<a href="http://theory.phphtml.net/tasks/javascript/practice.html" class="linkList">4. Еда</a>
+		<br>
+		<br>
+		<a href="http://www.cluber.com.ua/lifestyle/krasota-i-zdorove/2013/03/kak-ne-byit-zhirnoy-lenivoy-sviney-i-nachat-zhit" class="linkList">5. Алкоголь</a>
+		<br>
+		<br>
+		<a href="http://www.cluber.com.ua/lifestyle/krasota-i-zdorove/2013/03/kak-ne-byit-zhirnoy-lenivoy-sviney-i-nachat-zhit" class="linkList">6. Я — в будущем</a>
+		<br>
+		<br>
+		<a href="http://www.cluber.com.ua/lifestyle/krasota-i-zdorove/2013/03/kak-ne-byit-zhirnoy-lenivoy-sviney-i-nachat-zhit" class="linkList">7. Я и мои близкие</a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Square each Int</h2>
+	<div class="square">
+		<p class="squareNum">32</p>
+		<p class="squareNum">3</p>
+		<p class="squareNum">9</p>
+		<p class="squareNum">132</p>
+		<p class="squareNum">42</p>
+		<p class="squareNum">4</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Click to enlarge image</h2>
+	<div class="imgBox">
+		<img src="images/accessories.jpg" alt="accessories" class="imgItem" />
+		<img src="images/gifts.jpg" alt="gifts" class="imgItem" />
+		<img src="images/home.jpg" alt="home" class="imgItem" />
+		<img src="images/jewellery.jpg" alt="jewellery" class="imgItem" />
+		<img src="images/supplies.jpg" alt="supplies" class="imgItem" />
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Click to enlarge image and then reverse</h2>
+	<div class="resizeImgBox">
+		<img src="images/accessories.jpg" alt="accessories" class="resizeImg" />
+		<img src="images/gifts.jpg" alt="gifts" class="resizeImg" />
+		<img src="images/home.jpg" alt="home" class="resizeImg" />
+		<img src="images/jewellery.jpg" alt="jewellery" class="resizeImg" />
+		<img src="images/supplies.jpg" alt="supplies" class="resizeImg" />
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Small images 30px show up images size 50px</h2>
+	<div id="socialImages">
+		<img src="images/smallPic/image_1_s.jpg" alt="snow" />
+		<img src="images/smallPic/image_2_s.jpg" alt="window" />
+		<img src="images/smallPic/image_3_s.jpg" alt="ledder" />
+		<img src="images/smallPic/image_4_s.jpg" alt="item" />
+		<img src="images/smallPic/image_5_s.jpg" alt="empty pic" />
+		<img src="images/smallPic/image_6_s.jpg" alt="river" />
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Count number in input</h2>
+	<div id="caseCountInput">
+		<input type="text" id="changeVal" placeholder="Int" value="0">
+		<input type="button" data-action="plus" value="+1">
+		<input type="button" data-action="minus" value="-1">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Tasks and Work with forms like input and select</h2>
+	<form action="" id="form">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+	</form>
+	<button type="button" id="btnGetSum">Get Sum</button>
+	<p class="putNumber"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Sum number in forms</h2>
+	<form action="" class="formForSum">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+	</form>
+	<form action="" class="formForSum">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+	</form>
+	<form action="" class="formForSum">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+	</form>
+	<form action="" class="formForSum">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+		<input type="text" placeholder="Enter number" value="0">
+	</form>
+	<button type="button" id="getForms">Get Sum</button>
+	<p class="resSumNum"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Choice from select and add value in input</h2>
+	<form id="update">
+		<select id="select"></select>
+		<input type="text" id="choiseCase">
+	</form >
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Find index list from input</h2>
+	<form action="" id="formSearchIndex">
+		<select id="idSelect">
+			<option value=""></option>
+		</select>
+		<input type="text" id="searchIndex" placeholder="Number Country">
+		<span>List doesn't have this number</span>
+		<input type="button" id="btnSearch" value="Search">
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Parse JSON to Region and Country</h2>
+	<form action="" id="formChoice">
+		<select id="regionSelect">
+			<option value=""></option>
+		</select>
+		<select id="countrySelect" disabled>
+			<option>Select Country</option>
+		</select>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Check Int in Input</h2>
+	<form action="" id="formCheckInput">
+		<input type="text" id="checkInput" placeholder="Please enter Int">
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Select Text on Page</h2>
+	<form action="" id="formSelection">
+		<input type="text" id="inputEnterText">
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Find Max number in string 32 and paint it</h2>
+	<p class="contentText">When you submit a proposal, clients review 913 your profile to decide if your skills and experience match what they are looking for.</p>
+	<p class="contentText">Your experience level is 1 Entry Level</p>
+	<p class="contentText">It's time to create a profile with the jobs 101 you want in mind.</p>
+	<p class="contentText">This is your opportunity to market your 532 freelance business to clients.</p>
+	<p class="contentText">You want to work in Web, 852 Mobile & Software Dev</p>
+	<button type="button" id="btnFindNum">Find Max Num</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Writing summ from title to input</h2>
+	<div id="sumTitle">
+		<p>When you submit a proposal, clients review your profile to decide if your skills and experience match what they are looking for.</p>
+		<p>Your experience level is Entry Level</p>
+		<p>It's time to create a profile with the jobs you want in mind.</p>
+		<p>This is your opportunity to market your freelance business to clients.</p>
+		<p>You want to work in Web, Mobile & Software Dev</p>
+		<input type="text" id="inputSumCount" value="0">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Square number in input every one second</h2>
+	<div id="squareBlock">
+		<input type="text" id="inputSquareNum" value="4">
+		<button type="button" id="btnSetInterval">Start</button>
+		<button type="button" id="btnClearInterval">Clear</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Output Random String</h2>
+	<div id="randomStr">
+		<input type="text" id="inputRandomString">
+		<button type="button" id="btnGenerate">Generate</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Output Random String with use int other input</h2>
+	<div id="randomStrNum">
+		<input type="text" id="inputInt" placeholder="Please enter Int">
+		<button type="button" id="btnGen">Generate</button>
+		<input type="text" id="inputRandomStr" placeholder="You get random string">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Enter and use string</h2>
+	<div id="randomChoice">
+		<input type="text" id="lenghtStr" placeholder="Please enter Int">
+		<input type="text" id="possibleStr" placeholder="Please enter String">
+		<button type="button" id="btnSetStr">Generate</button>
+		<input type="text" id="putRandomStr" placeholder="You get random string">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Enter in input num and start countdown</h2>
+	<div id="countdownBox">
+		<input type="text" id="putInt" placeholder="You int">
+		<p id="startCountdown"></p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Change BackgroundColor Section Every Second</h2>
+	<p id="par"></p>
+	<button type="button" id="btnAddColor">Change Color</button>
+	<button type="button" id="btnStopChange">Stop Change</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Change BackgroundColor in Other Section Every Second</h2>
+	<p id="paragraph"></p>
+	<button type="button" id="btnStartChange">Change Color</button>
+	<button type="button" id="btnStopColor">Stop Change</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Load Link and click for it</h2>
+	<a href="#" id="changeLink">Next String</a>
+	<p id="caseLink"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Progresive Int in Input</h2>
+	<div id="progNumber">
+		<input type="text" placeholder="Progresive Number" >
+		<input type="text" placeholder="Progresive Number" >
+		<input type="text" placeholder="Progresive Number" >
+		<input type="text" placeholder="Progresive Number" >
+		<button id="btnCountNum" type="button">Start Count</button>
+		<button id="btnClearCount" type="button">Clear Count</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Check birthday</h3>
+	<div id="birthday">
+		<input type="text" id="rangeBirthdayDay" placeholder="2014-31-12">
+		<p id="endDaysBirthday"></p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideImg">
+		<img src="images/2.jpg" height="50" width="50" alt="">
+		<img src="images/money.png" height="50" width="50" alt="">
+		<img src="images/my_house.jpg" height="50" width="50" alt="">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideLink">
+		<a href="root.html">One</a>
+		<a href="shoot.html">Two</a>
+		<a href="fosa.html">Three</a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideHref">
+		<a href="http://root.html">One</a>
+		<a href="http://shoot.html">Two</a>
+		<a href="http://fosa.html">Three</a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideInput">
+		<input type="text">
+		<input type="text">
+		<input type="text">
+		<p id="tester"></p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideInputAlert">
+		<input type="text" value="one">
+		<input type="text" value="two">
+		<input type="text" value="three">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideParag">
+		<p>5</p>
+		<p>2</p>
+		<p>3</p>
+		<p>4</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideInputBlur">
+		<input type="text" data-length="4">
+		<input type="text" data-length="6">
+		<input type="text" data-length="12">
+		<input type="text" data-length="8">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="provideDiv">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="cloneInput">
+		<input type="submit" value="+" id="btnClone">
+		<input type="text">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="createInputs">
+		<input type="text" id="inputDigits">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="hideParent">
+		<input type="text">
+		<input type="submit" value="Hide" id="btnHideParent">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Метрика</h3>
+	<input type="submit" value="clientTop" id="btnClientTop">
+	<div id="clientTop">
+		<p>clientTop</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="clientLeft" id="btnClientLeft">
+	<div id="clientLeft">
+		<p>clientLeft</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="offsetWidth" id="btnOffsetWidth">
+	<div id="offsetWidth">
+		<p>offsetWidth</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="offsetHeigth" id="btnOffsetHeigth">
+	<div id="offsetHeigth">
+		<p>offsetHeigth</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="getComputedStyle" id="btnGetComputedStyle">
+	<input type="submit" value="scrollTopLeft" id="btnScrollTopLeft">
+	<input type="submit" value="AddScrollTop" id="btnAddScrollTop">
+	<input type="submit" value="AddScrollBottom" id="btnAddScrollBottom">
+	<input type="submit" value="scrollWidth&Height" id="btnScrollWidthHeight">
+	<input type="submit" value="minusScrollHeight" id="btnMinusScrollHeight">
+	<div id="getComputedStyle">
+		<p>
+			getComputedStyle
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore recusandae deleniti libero corporis, vero rerum? Fuga necessitatibus officia voluptatibus at voluptate recusandae inventore quos harum. Molestiae laboriosam a vero neque?
+		</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="pageXOffset & pageYOffset" id="btnPageOffset">
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="scrollTo" id="btnScrollTo">
+	<input type="submit" value="scrollBy" id="btnScrollBy">
+	<input type="submit" value="scrollIntoView" id="btnScrollIntoView">
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="CheckScrollPage" id="btnCheckScrollPage">
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="Change Size" id="btnChangeSizeStyle">
+	<div id="ChangeSizeStyle">
+		<p>offsetHeigth</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<button onclick="alert('Текущая прокрутка сверху: ' + window.pageYOffset )">Нажми меня чтобы узнать была ли страница прокручена!</button>
+	<br>
+	<br>
+	<br>
+	<h1>Object Event</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Mousemove event coords</h3>
+	<div id="coordsMousemMove">
+		<div id="shoWCoords"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="coordsArea">
+		<div id="shoWInfo">Нажмите в любое место.</div>
+		<div id="squareClient"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="areaForMove">
+		<div id="infoArea">Нажмите в любое место. <br> Show Center element</div>
+		<div id="squareElem"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1>keyCode</h1>
+	<br>
+	<input type="text" id="inputKeyCode">
+	<br>
+	<br>
+	<div>Код нажатой клавиши: <span id="showCode">?</span>  type : <span id="showKey">?</span></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="areaBgColor"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="areaDiffKey"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="text" id="inputEnterKey" placeholdert="Enter Some Text">
+	<p id="paragGetVal"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="delegation">
+		<ul id="delegList">
+			<li>punkt 1 <i>dfsfds</i></li>
+			<li>punkt 2</li>
+			<li>punkt 3</li>
+			<li>punkt 4</li>
+			<li>punkt 5</li>
+		</ul>
+		<input type="submit" id="btnAddPunkt" value="Add one more list">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<table border="1" id="tableWork">
+		<thead>
+			<tr>
+				<td>№</td>
+				<td>First Name</td>
+				<td>Second Name</td>
+			</tr>
+		</thead>
+		<tbody id="userWorks">
+			<tr>
+				<td>1</td>
+				<td>Igor</td>
+				<td>Sadovets</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<br>
+	<form action="" id="formNewUser">
+		<input type="text" id="intFirstName" placeholder="First Name">
+		<input type="text" id="intSecondName" placeholder="Last Name">
+		<input type="button" id="btnAddNewUser" value="Add User in Table">
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Each Title Start Timer</h3>
+	<p class="clousureTimer">0</p>
+	<p class="clousureTimer">0</p>
+	<p class="clousureTimer">0</p>
+	<p class="clousureTimer">0</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Closure Functions Count</h3>
+	<!-- <div id="boxBtnCount">
+		<input type="button" class="btnCountCreate" value="0">
+		<input type="button" class="btnCountCreate" value="0">
+		<input type="button" class="btnCountCreate" value="0">
+	</div> -->
+	<div id="boxBtnCount">
+		<button class="btnCountCreate" value="0">0</button>
+		<button class="btnCountCreate" value="1">0</button>
+		<button class="btnCountCreate" value="2">0</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="boxParColor">
+		<p class="eachChangeColor">true or false 1</p>
+		<p class="eachChangeColor">true or false 2</p>
+		<p class="eachChangeColor">true or false 3</p>
+		<p class="eachChangeColor">true or false 4</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="boxFib">
+		<input type="button" class="fibNum" value="Fibonnachi Int 1">
+		<p></p>
+		<input type="button" class="fibNum" value="Fibonnachi Int 2">
+		<p></p>
+		<input type="button" class="fibNum" value="Fibonnachi Int 3">
+		<p></p>
+		<input type="button" class="fibNum" value="Fibonnachi Int 4">
+		<p></p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>History Onchange</h3>
+	<div id="boxOnchangeHistory">
+		<div>
+			<button type="button">&#8592;</button>
+			<button type="button">&#8594;</button>
+			<input type="text" class="inputOnchange"/>
+		</div>
+		
+		<div>
+			<button type="button">&#8592;</button>
+			<button type="button">&#8594;</button>
+			<input type="text" class="inputOnchange"/>
+		</div>
+		<br>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Random Number of use into Clouser</h3>
+	<button id="btnGetRandomNum">Random Number Clouser</button>
+	<p id="paragPutArr"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Work with Object and DOM</h3>
+	<div id="startToWorkObj"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Work with Object and DOM Many Elements</h3>
+	<div class="fingerPrint"></div>
+	<div class="fingerPrint"></div>
+	<div class="fingerPrint"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>Set Rectangle</h3>
+	<div id="boxRectangleObj"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1>Lesson 3 JavaScript</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formChangeCheckbox">
+		<a href="#" id="linkChangeCeck">Change CheckBox Bellow</a>
+		<input type="checkbox" name="checkBox">
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formChecked">
+		<input type="checkbox" name="checkBox">
+		<input type="checkbox" name="checkBox">
+		<input type="checkbox" name="checkBox">
+		<button id="btnChecked" type="button">Checked Boxes</button>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formRadioChoice">
+		<p>Please Choice your language</p>
+		<input type="radio" name="radioButton">html <br>
+		<input type="radio" name="radioButton">css <br>
+		<input type="radio" name="radioButton">js <br>
+		<input type="radio" name="radioButton">php <br>
+		<p id="enterChoice"></p>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formCheckedChoice">
+		<p>Please Choice your language</p>
+		<input type="checkbox" name="checkboxButton">html <br>
+		<input type="checkbox" name="checkboxButton">css <br>
+		<input type="checkbox" name="checkboxButton">js <br>
+		<input type="checkbox" name="checkboxButton">php <br>
+		<p id="outputChoice"></p>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formCheckedInput">
+		<input type="checkbox" id="checkInput">Hide or Vissible Input<br>
+		<input type="text" id="inputHide">
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formChoiseTitle">
+		<p>Please Choice your language</p>
+		<input type="checkbox" name="checkboxChoice">html <br>
+		<p class="outputChoice">html </p>
+		<input type="checkbox" name="checkboxChoice">css <br>
+		<p class="outputChoice">css</p>
+		<input type="checkbox" name="checkboxChoice">js <br>
+		<p class="outputChoice">js</p>
+		<input type="checkbox" name="checkboxChoice">php <br>
+		<p class="outputChoice">php</p>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formList">
+		<input type="text" id="inputNumList" name="enterYourNumList" placeholder="Enter Number">
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li>js</li>
+			<li>php</li>
+		</ul>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="" id="formDoSmth">
+		<p>Please your Choice, doing smth</p>
+		<input type="checkbox" name="doSomething">Strike <br>
+		<input type="checkbox" name="doSomething">Make Bold <br>
+		<input type="checkbox" name="doSomething">Make red color <br>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="blockItems">
+		<div class="item">
+			<button id="btnCloseBlock" type="button">Close This Block</button>
+		</div>
+		<div class="item">
+			<button id="btnCloseBlock" type="button">Close This Block</button>
+		</div>
+		<div class="item">
+			<button id="btnCloseBlock" type="button">Close This Block</button>
+		</div>
+		<div class="item">
+			<button id="btnCloseBlock" type="button">Close This Block</button>
+	</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
